@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { server } from "../../constants/config";
+// import { server } from "../../constants/config";
 
 const api = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: `${server}/api/v1/` }),
+  baseQuery: fetchBaseQuery({ baseUrl: `https://chatapp-server-kyc8.onrender.com/api/v1/` }),
   tagTypes: ["Chat", "User", "Message"],
 
   endpoints: (builder) => ({
