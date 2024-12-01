@@ -88,7 +88,7 @@ const columns = [
 
 const MessageManagement = () => {
   const { loading, data, error } = useFetchData(
-    `${server}/api/v1/admin/messages`,
+    `https://chatapp-server-kyc8.onrender.com/api/v1/admin/messages`,
     "dashboard-messages"
   );
 
