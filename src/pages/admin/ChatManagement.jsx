@@ -73,7 +73,7 @@ const columns = [
 
 const ChatManagement = () => {
   const { loading, data, error } = useFetchData(
-    `${server}/api/v1/admin/chats`,
+    `https://chatapp-server-kyc8.onrender.com/api/v1/admin/chats`,
     "dashboard-chats"
   );
 
